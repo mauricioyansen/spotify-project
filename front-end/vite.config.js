@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   define: {
     'process.env': {}, // Evita erro "process is not defined" no navegador
+    'process.argv': '[]', // Simula process.argv como um array vazio
   },
   build: {
     target: "esnext",
